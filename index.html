@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu du Pendu</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="upContainer">
+        <label for="guess">Devine le mot !</label>
+            <br>
+            <h1>Ecris une lettre</h1>
+        <input type="text" name="devine" id="guess" placeholder="'x'" required
+               minlength="1" maxlength="1" size="5">
+        </div>
+
+        <div id="win"></div>
+        <div id="numbertry"></div>
+        <div id="popWord"></div>
+
+    </div>
+
+    <div id="downContainer">
+        <button type="button" id="try">Try</button>
+        <button type="button" id="reset">reset</button>
+    </div>
+
+    <div id="img"></div>
+
+<script src="./app.js"></script>
+</body>
+</html>

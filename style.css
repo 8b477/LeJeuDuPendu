@@ -1,0 +1,67 @@
+
+body{
+    background-color: #244879;
+}
+
+
+#container{
+    border: solid black 1px;
+    margin: 5% auto;
+    width: 29%;
+    background-color: rgba(22, 134, 113, 0.36);
+
+}
+
+#downContainer{
+    text-align: center;
+}
+
+#downContainer > button{
+    font-size: 30px;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+#downContainer > button:hover{
+    transform: scale(1.25);
+    border-radius: 15px;
+}
+
+#upContainer{
+    text-align: center;
+    font-size: 25px;
+}
+
+#try{
+    margin-right: 2%;
+}
+
+#popWord{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    line-height: 50px;
+    font-size: 60px;
+    width: 100%;
+}
+
+
+.letterToGuess{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    margin: 1%;
+}
+
+.guessLetter{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 1%;
+}
+
+#guess{
+    height: 50px;
+    width: 40px;
+    font-size: 45px;
+}
