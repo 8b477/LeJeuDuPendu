@@ -34,13 +34,13 @@ const guessWord = [
 ]
 
 let tablePicture =[
-    "pendu1.png",
-    "pendu2.png",
-    "pendu3.png",
-    "pendu4.png",
-    "pendu5.png",
-    "pendu6.png",
-    "pendu7.png",
+    "./images/pendu1.png",
+    "./images/pendu2.png",
+    "./images/pendu3.png",
+    "./images/pendu4.png",
+    "./images/pendu5.png",
+    "./images/pendu6.png",
+    "./images/pendu7.png",
 ]
 
 
