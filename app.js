@@ -19,6 +19,7 @@ const numberWin = document.getElementById('win');
 const numberTry = document.getElementById('numbertry');
 const divPopImg = document.getElementById('img');
 const valueInput = document.getElementById('guess');
+let missLetter = document.getElementById('missLetter');
 
 const btnClick = document.getElementById('try');
 const btnReset = document.getElementById('reset');
@@ -32,7 +33,7 @@ const guessWord = [
     "singe",
 ]
 
-const tablePicture =[
+let tablePicture =[
     "pendu1.png",
     "pendu2.png",
     "pendu3.png",
@@ -43,13 +44,13 @@ const tablePicture =[
 ]
 
 
-
 let tryLetter = [];
 
 let wordActuel;
 
 let countWin = 0;
-let countLoose = 10;
+let countLoose = 7;
+let imgI = 0;
 
 //function for take a random word in my table guessWord
 function getRandomWord() {
@@ -99,11 +100,10 @@ btnClick.addEventListener('click', function () {
             countLoose--;
             numberTry.innerHTML = "Nombre d'éssaye restant : " + countLoose;
             let createImg = document.createElement('img');
-            createImg.src = "./images/" + tablePicture[0];
+            createImg.src = "/images/" + tablePicture[imgI];
             divPopImg.appendChild(createImg);
-            if(createImg.src.includes("./images/" + tablePicture[0])){
-                alert("dozeeee")
-            }
+            imgI++;
+            missLetter.innerHTML += valueInput.value.toLowerCase() + ", ";
             if(countLoose === 0){
                 alert("PERDU!")
                 numberTry.innerHTML = "Nombre d'éssaye restant : " + countLoose;
@@ -120,7 +120,7 @@ function reset(){
     tryLetter =[];
     popWord.innerHTML = "";
     valueInput.value = "";
+    //FIX RESET IMG
+    //divPopImg.removeChild(divPopImg);
     drawWord(getRandomWord());
 }
-
-//CTRL ALT L

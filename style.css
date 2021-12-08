@@ -65,3 +65,18 @@ body{
     width: 40px;
     font-size: 45px;
 }
+
+#reload{
+    margin-left: 2%;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    text-decoration-line: underline;
+    font-size: 20px;
+}
